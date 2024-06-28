@@ -3,7 +3,7 @@
 
 const readline = require("node:readline");
 //função recursiva para cadastrar e classificar o nível de herói
-function start_question(herois) {
+function startQuestion(herois) {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -61,7 +61,7 @@ function start_question(herois) {
           printHerois();
           if (prosseguir == "s") {
             rl.close();
-            start_question(listaDeHerois);
+            startQuestion(listaDeHerois);
           } else {
             console.log(
               "Obrigado por usar o cadastro de nível do herói!, até logo!"
@@ -92,4 +92,4 @@ function start_question(herois) {
   }
 }
 
-start_question();
+startQuestion();
